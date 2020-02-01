@@ -1,4 +1,4 @@
-MORSE_CODE = {
+let MORSE_CODE = {
     ".-": "A",
     "-...": "B",
     "-.-.": "C",
@@ -70,5 +70,3 @@ const encodeMorse = () => {
     document.getElementById("demo1").innerHTML = encodeStr;
 
 }
-
-

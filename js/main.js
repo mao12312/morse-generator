@@ -35,6 +35,7 @@ let MORSE_CODE = {
     "--...": "7",
     "---..": "8",
     "----.": "9",
+    " ": " ",
 };
 const decodeMorse = () => {
     let morseCode = document.getElementById("morseIpt").value;
@@ -54,12 +55,11 @@ const decodeMorse = () => {
 }
 
 const encodeMorse = () => {
-    let str = document.getElementById("strIpt").value.toUpperCase().split('');
+    let str = document.getElementById("morseIpt").value.toUpperCase().split('');
     let encodeStrSpt = [];
     for (let i = 0; i < str.length; i++) {
         let searchValue = str[i];
         let result = Object.keys(MORSE_CODE).reduce(function (r, k) { return MORSE_CODE[k] === searchValue ? k : r }, null);
-        console.log(result)
         if (result !== null) {
             encodeStrSpt.push(result);
         } else {
@@ -67,6 +67,22 @@ const encodeMorse = () => {
         }
     }
     let encodeStr = encodeStrSpt.join(' ');
-    document.getElementById("demo1").innerHTML = encodeStr;
+    document.getElementById("demo").innerHTML = encodeStr;
+}
 
+const check = () => {
+    let element = document.target.select.value
+    if(element === "encode"){
+        encodeMorse()
+    }else if(element === "decode"){
+        decodeMorse()
+    }else{
+        return "選択してください"
+    }
+}
+function hello(){
+    console.log("hello")
+}
+function goodby(){
+    console.log("goodby")
 }

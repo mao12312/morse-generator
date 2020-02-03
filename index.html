@@ -9,12 +9,19 @@
 </head>
 
 <body>
+    <form name="target">
+        <input name="select" type="radio" value="encode"> A
+        <input name="select" type="radio" value="decode"> B
+    </form>
+
+
     <textarea id="morseIpt" rows="4" cols="50"></textarea><br>
-    <textarea id="strIpt" rows="4" cols="50"></textarea><br>
-    <button id="resultBtn" onclick="decodeMorse()">変換decodeMorse</button>
-    <button id="resultBtn" onclick="encodeMorse()">変換encodeMorse</button>
+    <!-- <textarea id="strIpt" rows="4" cols="50"></textarea><br> -->
+    <!-- <button id="resultBtn" onclick="decodeMorse()">変換decodeMorse</button> -->
+    <!-- <button id="resultBtn" onclick="encodeMorse()">変換encodeMorse</button> -->
+    <button id="test" onclick="check()">test</button>
+
     <p id="demo"></p>
-    <p id="demo1"></p>
     <!-- script -->
     <script src="js/main.js"></script>
 </body>

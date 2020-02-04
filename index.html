@@ -9,17 +9,13 @@
 </head>
 
 <body>
+    <p id="message"></p>
     <form name="target">
-        <input name="select" type="radio" value="encode"> A
-        <input name="select" type="radio" value="decode"> B
+        <input name="select" type="radio" value="encode">encode
+        <input name="select" type="radio" value="decode">decode
     </form>
-
-
     <textarea id="morseIpt" rows="4" cols="50"></textarea><br>
-    <!-- <textarea id="strIpt" rows="4" cols="50"></textarea><br> -->
-    <!-- <button id="resultBtn" onclick="decodeMorse()">変換decodeMorse</button> -->
-    <!-- <button id="resultBtn" onclick="encodeMorse()">変換encodeMorse</button> -->
-    <button id="test" onclick="check()">test</button>
+    <button id="test" onclick="check()">Run</button>
 
     <p id="demo"></p>
     <!-- script -->

@@ -75,7 +75,7 @@ const encodeMorse = () => {
         if (result !== null) {
             encodeStrSpt.push(result);
         } else {
-            return document.getElementById("demo1").innerHTML = "不適切な文字です";
+            return document.getElementById("demo").innerHTML = "不適切な文字です";
         }
     }
     let encodeStr = encodeStrSpt.join(' ');
